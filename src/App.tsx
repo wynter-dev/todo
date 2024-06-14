@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="content">
+      <section>
+        <h1>THIS WEEK</h1>
+        <span>신나는 일주일을 계획합시다!</span>
+      </section>
+      <section>
+        <h2>이번주 날씨</h2>
+        <div>
+          <ul className="weather-wrap">
+            <li className="weather-content"></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>이번주 To-Do</h2>
+        <button >추가 버튼</button>
+        <ul>
+          <li>리스트1</li>
+        </ul>
+      </section>
+    </main>
   );
 }
 
